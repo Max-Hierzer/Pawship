@@ -50,7 +50,7 @@ sudo systemctl start mysql
 sudo apt install php php-mysql libapache2-mod-php php-cli -y 
 
 **Restart Apache to apply PHP configurations:**\
-sudo systemctl restart apache2    # Debian/Ubuntu
+sudo systemctl restart apache2
 
 ### Step 5: Create a MySQL Database and User for WordPress
 **Log in to MySQL:**\
