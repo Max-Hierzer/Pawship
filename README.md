@@ -33,7 +33,7 @@ sudo apt install apache2 -y
 
 **Enable and start Apache:**\
 sudo systemctl enable apache2\
-sudo systemctl start apache2\
+sudo systemctl start apache2
 
 Verify Apache is running: Open your web browser and navigate to http://127.0.01/. You should see the Apache default page.
 
@@ -95,6 +95,6 @@ define('DB_HOST', 'localhost');
 
 ### Step 8: Finalize Installation
 **Restart Apache:**\
-sudo systemctl restart apache2\
+sudo systemctl restart apache2
 
 Complete WordPress setup: Open your browser and navigate to http://127.0.0.1/. Follow the on-screen instructions to configure your WordPress site.
