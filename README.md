@@ -23,6 +23,15 @@
 
  
 ## Installation
+## For React:
+### Step 1: Clone/Pull Repository
+**git clone Repository link**\
+### Step 2: Move into the Pawship/pawship directory
+### Step 3: NPM Install
+### Step 4: npm start
+### Step 5: Do your tasks
+
+
 ### Step 1: Update Your System
 **Make sure your package manager and system are up-to-date:**\
 sudo apt update && sudo apt upgrade -y
