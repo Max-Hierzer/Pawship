@@ -1,43 +1,45 @@
-# Ignore sensitive credentials
-wp-config.php
+# Ignore the wp-config file for security reasons
+project/wp-config.php
 
-# Ignore the entire WordPress core files (optional, keep only customizations in the repo)
-wp-admin/
-wp-includes/
+# Ignore WordPress core directories (optional)
+project/wp-admin/
+project/wp-includes/
 
-# Ignore uploaded files (usually large and not needed in the repo)
-wp-content/uploads/
+# Ignore uploads (media files)
+project/wp-content/uploads/
 
-# Ignore plugins and themes (optional, add custom plugins/themes to version control if needed)
-wp-content/plugins/
-wp-content/themes/
+# Ignore all plugins and themes except custom ones
+project/wp-content/plugins/
+project/wp-content/themes/
 
-# Ignore specific system files and temp files
-.DS_Store
-Thumbs.db
-*.log
-*.tmp
-*.bak
-*.swp
-*.swo
-*.cache
+# Allow custom themes/plugins if needed
+# !project/wp-content/themes/your-custom-theme/
+# !project/wp-content/plugins/your-custom-plugin/
 
-# Ignore files for deployment or environment-specific settings
-.env
-.idea/
-.vscode/
-*.sql
-*.sql.gz
+# Ignore unnecessary system files
+project/.DS_Store
+project/Thumbs.db
+project/*.log
+project/*.tmp
+project/*.bak
+project/*.swp
+project/*.swo
+project/*.cache
 
-# Ignore composer dependencies (if not managing with composer)
-vendor/
+# Ignore environment files
+project/.env
+project/.idea/
+project/.vscode/
+project/*.sql
+project/*.sql.gz
 
-# Ignore node modules (if using Node.js for front-end)
-node_modules/
-package-lock.json
-yarn.lock
+# Ignore node modules and package managers
+project/node_modules/
+project/vendor/
+project/package-lock.json
+project/yarn.lock
 
 # Ignore other unnecessary files
-license.txt
-readme.html
+project/license.txt
+project/readme.html
 
