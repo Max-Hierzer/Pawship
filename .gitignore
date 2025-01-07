@@ -1,0 +1,43 @@
+# Ignore sensitive credentials
+wp-config.php
+
+# Ignore the entire WordPress core files (optional, keep only customizations in the repo)
+wp-admin/
+wp-includes/
+
+# Ignore uploaded files (usually large and not needed in the repo)
+wp-content/uploads/
+
+# Ignore plugins and themes (optional, add custom plugins/themes to version control if needed)
+wp-content/plugins/
+wp-content/themes/
+
+# Ignore specific system files and temp files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.cache
+
+# Ignore files for deployment or environment-specific settings
+.env
+.idea/
+.vscode/
+*.sql
+*.sql.gz
+
+# Ignore composer dependencies (if not managing with composer)
+vendor/
+
+# Ignore node modules (if using Node.js for front-end)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Ignore other unnecessary files
+license.txt
+readme.html
+
