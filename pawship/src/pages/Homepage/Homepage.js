@@ -9,21 +9,30 @@ import './Homepage.css';
 function Homepage() {
   return (
     <div className="homepage">
-      <h1>Finde deinen Pawfekten companion!</h1>
       <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false}>
         <div>
           <img src={banner1} alt="Banner 1" />
-          <p className="legend">Find Your Perfect Partner!</p>
+          <div className="carousel-text">
+            <h1>Finde deinen Pawfekten Partner!</h1>
+            <p>Unsere Tiere warten darauf, dein Herz zu erobern.</p>
+          </div>
         </div>
         <div>
           <img src={banner2} alt="Banner 2" />
-          <p className="legend">Adopt a Furry Friend!</p>
+          <div className="carousel-text2">
+            <h1>Ein Zuhause für kleine Helden!</h1>
+            <p>Hilf uns, ihnen ein glückliches Leben zu schenken.</p>
+          </div>
         </div>
         <div>
           <img src={banner3} alt="Banner 3" />
-          <p className="legend">Bring Love Home!</p>
+          <div className="carousel-text">
+            <h1>Pfoten, die dein Herz berühren!</h1>
+            <p>Mach den ersten Schritt und entdecke dein Glück.</p>
+          </div>
         </div>
       </Carousel>
+      <h1>Finde deinen Pawfekten companion!</h1>
     </div>
   );
 }

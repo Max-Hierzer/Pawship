@@ -45,27 +45,6 @@ body {
     height: auto;
     display: block; 
   }
-  
-
-  @media (max-width: 768px) {
-    .hero h1 {
-      font-size: 2em;
-    }
-  
-    .hero p {
-      font-size: 1em;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .hero {
-      padding: 50px 0;
-    }
-  
-    .hero h1 {
-      font-size: 1.5em;
-    }
-  }
 
   .legend {
     background-color: rgba(0, 0, 0, 0.5);
@@ -73,4 +52,143 @@ body {
     font-size: 1.2em;
     padding: 10px;
     border-radius: 5px;
-}
+  }
+
+  .carousel-text {
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 5px;
+      max-width: 80%;
+  }
+
+  .carousel-text2 {
+      position: absolute;
+      top: 50%;
+      left: 80%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 5px;
+      max-width: 80%;
+  }
+
+  .carousel-text h1, .carousel-text2 h1 {
+      font-size: 2rem;
+      margin: 0;
+      font-weight: bold;
+  }
+
+  .carousel-text p, .carousel-text2 p {
+      font-size: 1rem;
+      margin: 10px 0;
+  }
+
+  .carousel-text, .carousel-text2 {
+      word-wrap: break-word;
+      overflow-wrap: anywhere;
+  }
+
+  @media (max-width: 1400px) {
+    .carousel-text {
+        top: 50%;
+        left: 23%;
+        transform: translate(-50%, -40%);
+
+        padding: 15px;
+    }
+
+    .carousel-text h1, .carousel-text2 h1 {
+        font-size: 1.7rem;
+    }
+
+    .carousel-text p, .carousel-text2 p {
+        font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .carousel-text {
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -40%);
+
+        padding: 15px;
+    }
+
+    .carousel-text h1, .carousel-text2 h1 {
+        font-size: 1.4rem;
+    }
+
+    .carousel-text p, .carousel-text2 p {
+        font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .carousel-text {
+        top: 45%;
+        left: 25%;
+        width: 40%;
+        transform: translate(-50%, -40%);
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .carousel-text2 {
+        width: 35%;
+    }
+
+    .carousel-text h1, .carousel-text2 h1 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-text p, .carousel-text2 p {
+        font-size: 0.7rem;
+    }
+
+    .hero h1 {
+      font-size: 2em;
+    }
+
+    .hero p {
+      font-size: 1em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .carousel-text {
+        top: 45%;
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    .carousel-text2 {
+        top: 50%;
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    .carousel-text h1, .carousel-text2 h1 {
+        font-size: 1rem;
+    }
+
+    .carousel-text p, .carousel-text2 p {
+        font-size: 0.6rem;
+    }
+
+    .hero {
+      padding: 50px 0;
+    }
+
+    .hero h1 {
+      font-size: 1.5em;
+    }
+  }
