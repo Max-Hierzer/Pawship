@@ -4,7 +4,7 @@ import './Homepage.css';
 function Homepage() {
   return (
     <div className="homepage">
-      <h1>Finde deinen Pawfekten Pawtner!</h1>
+      <h1>Finde deinen Pawfekten companien!</h1>
     </div>
   );
 }
