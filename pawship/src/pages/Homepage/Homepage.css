@@ -96,6 +96,37 @@ body {
       overflow-wrap: anywhere;
   }
 
+  .main {
+    margin: auto;
+    width: 40%;
+    text-align: center;
+  }
+
+  .main p, li {
+    font-size: 1.3rem;
+  }
+
+  .main ul {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+  }
+
+  .main li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .main ol {
+    list-style-type: decimal;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+  }
+
   @media (max-width: 1400px) {
     .carousel-text {
         top: 50%;
