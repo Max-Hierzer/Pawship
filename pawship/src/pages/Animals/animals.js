@@ -72,6 +72,7 @@ function Animals() {
           {/* Similar structure for cats */}
         </div>
       </div>
+      <AnimalTemplate name = {"Laika"} age = {12} gender = {"weiblich"} description = {"test"} images = {['IMG_20220720_151314.jpg', 'IMG_20230427_170925.jpg', 'IMG_20230805_132854.jpg', 'IMG_20231107_191339.jpg']} />
     </div>
   );
 }
