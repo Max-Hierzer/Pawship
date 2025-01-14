@@ -3,10 +3,10 @@ import './about.css';
 
 const About = () => {
   const team = [
-    { title: 'Leitung', name: 'Johanna Theissing' },
+    { title: 'Leitung', name: 'Johanna Theissing, Max Hierzer' },
     { title: 'Obmann', name: 'Gernot Fasching' },
     { title: 'Kassier', name: 'Alexander Leitner' },
-    { title: 'Tierpfleger/innen', name: 'Nevena Popovic, Tobias Prasser und Philipp Müller' },
+    { title: 'Tierpfleger/innen', name: 'Nevena Popović, Tobias Prasser und Philipp Müller' },
   ];
 
   return (
