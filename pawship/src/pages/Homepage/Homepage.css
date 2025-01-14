@@ -127,6 +127,20 @@ body {
     text-align: left;
   }
 
+  .adopt-button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .adopt-button:hover {
+    background-color: #ff3f31;
+  }
+
   @media (max-width: 1400px) {
     .carousel-text {
         top: 50%;

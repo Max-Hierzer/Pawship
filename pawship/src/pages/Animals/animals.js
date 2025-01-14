@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import './animals.css'; 
+import AnimalTemplate from './animalTemplate.js';
+
 
 const animalDataDog = [
   { name: 'Laika', images: [
@@ -72,3 +74,4 @@ function Animals() {
 
 
 export default Animals;
+
