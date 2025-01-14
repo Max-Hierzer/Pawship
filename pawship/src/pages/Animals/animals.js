@@ -1,53 +1,109 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './animals.css';
-import AnimalTemplate from './animalTemplate.js';
 
-
-// const animalDataDog = [
-//   {
-//     name: 'Laika', images: [
-//       require('../../images/Laika/IMG_20241101_150555.jpg'),
-//       require('../../images/Laika/IMG_20220720_151314.jpg')
-//     ],
-//   },
-//   {
-//     name: 'Mia', images: [
-//       require('../../images/Mia/7A60B11E-7613-4C01-BB46-A76FE5ABD2EA_1_105_c.jpeg'),
-//       require('../../images/Mia/7147BC44-8A9E-4B98-8C39-EE97BB89533E_1_105_c.jpeg')
-//     ],
-//   }
-//   // { name: 'JJ', image: require('../../images/JJ/Foto 29.10.23, 10 46 30.jpg') },
-//   // { name: 'Sammie', image: require('../../images/Sammie/Foto 29.10.23, 10 59 14.jpg') }
-// ];
-
-// const animalDataCat = [
-//   { name: 'Simba', image: require('../../images/Simba/Foto 25.08.24, 11 22 43.jpg') },
-//   { name: 'Nala', image: require('../../images/Nala/Foto 10.07.24, 20 34 47.jpg') }
-// ]
-
-
+const animalData = {
+  dogs: [
+    {
+      name: 'Laika',
+      images: [
+        'Laika1.jpg',
+        'Laika2.jpg',
+        'Laika3.jpg',
+        'Laika4.jpg',
+        'Laika5.jpg'
+      ]
+    },
+    {
+      name: 'Mia',
+      images: [
+        'Mia1.jpeg',
+        'Mia2.jpeg',
+        'Mia3.jpeg',
+        'Mia4.jpeg'
+      ]
+    },
+    {
+      name: 'JJ',
+      images: [
+        'JJ1.jpg',
+        'JJ2.jpg',
+        'JJ3.jpg',
+        'JJ4.jpg',
+        'JJ5.jpg',
+        'JJ6.jpg'
+      ]
+    }
+  ],
+  cats: [
+    {
+      name: 'Simba',
+      images: [
+        'Simba1.jpg',
+        'Simba2.jpg'
+      ]
+    },
+    {
+      name: 'Nala',
+      images: [
+        'Nala1.jpg',
+        'Nala2.jpg'
+      ]
+    }
+  ]
+};
 
 function Animals() {
+  const basePath = `${process.env.PUBLIC_URL}/images/`;
+
   return (
     <div className="Animals">
       <div className="Dogs">
         <h1>Unsere Hunde</h1>
+        <div className="grid-container">
+          {animalData.dogs.map((animal) => (
+            <Link to={`/animal/${animal.name.toLowerCase()}`} key={animal.name} className="carousel-link">
+              <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false} className="carousel-small">
+                {animal.images.map((image, index) => (
+                  <div key={index}>
+                    <img
+                      src={`${basePath}${animal.name}/${image}`}
+                      alt={`${animal.name}-${index}`}
+                      className="animal-thumbnail"
+                    />
+                  </div>
+                ))}
+              </Carousel>
+              <p>{animal.name}</p>
+            </Link>
+          ))}
+        </div>
       </div>
       <div className="Cats">
         <h1>Unsere Katzen</h1>
         <div className="grid-container">
-          {/* Similar structure for cats */}
+          {animalData.cats.map((animal) => (
+            <Link to={`/animal/${animal.name.toLowerCase()}`} key={animal.name} className="carousel-link">
+              <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false} className="carousel-small">
+                {animal.images.map((image, index) => (
+                  <div key={index}>
+                    <img
+                      src={`${basePath}${animal.name}/${image}`}
+                      alt={`${animal.name}-${index}`}
+                      className="animal-thumbnail"
+                    />
+                  </div>
+                ))}
+              </Carousel>
+              <p>{animal.name}</p>
+            </Link>
+          ))}
         </div>
       </div>
-      <AnimalTemplate name = {"Laika"} age = {12} gender = {"weiblich"} description = {"test"} images = {['IMG_20220720_151314.jpg', 'IMG_20230427_170925.jpg', 'IMG_20230805_132854.jpg', 'IMG_20231107_191339.jpg']} />
     </div>
   );
 }
 
-
 export default Animals;
-
