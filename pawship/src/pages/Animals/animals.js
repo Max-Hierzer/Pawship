@@ -1,21 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import './animals.css'; 
+import './animals.css';
 import AnimalTemplate from './animalTemplate.js';
 
 
 const animalDataDog = [
-  { name: 'Laika', images: [
-    require('../../images/Laika/IMG_20241101_150555.jpg'),
-    require('../../images/Laika/IMG_20220720_151314.jpg')
-  ],
+  {
+    name: 'Laika', images: [
+      require('../../images/Laika/IMG_20241101_150555.jpg'),
+      require('../../images/Laika/IMG_20220720_151314.jpg')
+    ],
   },
-  { name: 'Mia', images: [require('../../images/Mia/7A60B11E-7613-4C01-BB46-A76FE5ABD2EA_1_105_c.jpeg'),
-    require('../../images/Mia/7147BC44-8A9E-4B98-8C39-EE97BB89533E_1_105_c.jpeg')
-  ], }
+  {
+    name: 'Mia', images: [
+      require('../../images/Mia/7A60B11E-7613-4C01-BB46-A76FE5ABD2EA_1_105_c.jpeg'),
+      require('../../images/Mia/7147BC44-8A9E-4B98-8C39-EE97BB89533E_1_105_c.jpeg')
+    ],
+  }
   // { name: 'JJ', image: require('../../images/JJ/Foto 29.10.23, 10 46 30.jpg') },
   // { name: 'Sammie', image: require('../../images/Sammie/Foto 29.10.23, 10 59 14.jpg') }
 ];
