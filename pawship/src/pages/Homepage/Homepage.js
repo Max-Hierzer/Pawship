@@ -2,9 +2,6 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { useNavigate } from 'react-router-dom';
-import banner1 from "../../images/banner1.jpg";
-import banner2 from "../../images/banner2.jpg";
-import banner3 from "../../images/banner3.jpg";
 import './Homepage.css';
 
 
@@ -16,6 +13,9 @@ function Homepage() {
     navigate('/tiere');
   };
 
+  const banner1 = process.env.PUBLIC_URL + '/images/' + 'banner1.jpg';
+  const banner2 = process.env.PUBLIC_URL + '/images/' + 'banner2.jpg';
+  const banner3 = process.env.PUBLIC_URL + '/images/' + 'banner3.jpg';
 
   return (
     <div className="homepage">
