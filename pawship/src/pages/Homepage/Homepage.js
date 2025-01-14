@@ -1,12 +1,22 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import banner1 from "../../images/banner1.jpg";
-import banner2 from "../../images/banner2.jpg";
-import banner3 from "../../images/banner3.jpg";
+import { useNavigate } from 'react-router-dom';
 import './Homepage.css';
 
+
 function Homepage() {
+
+  const navigate = useNavigate();
+
+  const handleAdoptNowClick = () => {
+    navigate('/tiere');
+  };
+
+  const banner1 = process.env.PUBLIC_URL + '/images/' + 'banner1.jpg';
+  const banner2 = process.env.PUBLIC_URL + '/images/' + 'banner2.jpg';
+  const banner3 = process.env.PUBLIC_URL + '/images/' + 'banner3.jpg';
+
   return (
     <div className="homepage">
       <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false}>
@@ -47,6 +57,10 @@ function Homepage() {
         <br />
         <h1>Mach den Unterschied!</h1>
         <p>Durch Adoption gibst du einem Tier nicht nur ein Zuhause, sondern auch die Chance auf ein glückliches Leben. Schau dir unsere Tiere an und finde deinen neuen besten Freund!</p>
+        <button onClick={handleAdoptNowClick} className="adopt-button">
+          Adopt Now
+        </button>
+        <br />
         <br />
         <h1>So funktioniert’s:</h1>
         <ol className="styled-list">
