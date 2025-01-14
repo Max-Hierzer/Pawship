@@ -4,7 +4,7 @@ import './animals.css';
 function Animals() {
   return (
     <div className="Animals">
-      <h1>Wir freuen uns auf deine Tiere!</h1>
+      <h1>Unsere Tiere</h1>
     </div>
   );
 }
