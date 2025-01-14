@@ -35,7 +35,15 @@ const animalData = {
         'JJ5.jpg',
         'JJ6.jpg'
       ]
-    }
+    },
+    {
+      name: 'Sammie',
+      images: [
+        'Sammie1.jpg',
+        'Sammie2.jpg',
+        'Sammie2.jpg'
+      ]
+    },
   ],
   cats: [
     {

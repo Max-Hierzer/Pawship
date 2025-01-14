@@ -1,29 +1,47 @@
+h1 {
+  text-align: center;
+}
+
+.Cats {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.Dogs {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-  }
-  
-  .carousel-small {
-    width: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .carousel-link {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .animal-thumbnail {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  .carousel-small .carousel .slide img {
-    height: 150px;
-    object-fit: cover;
-  }
-  
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.carousel-small {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.carousel-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.animal-thumbnail {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.carousel-small .carousel .slide img {
+  height: 150px;
+  object-fit: cover;
+}
