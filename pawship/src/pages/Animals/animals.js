@@ -73,7 +73,7 @@ function Animals() {
         <div className="grid-container">
           {animalData.dogs.map((animal) => (
             <Link to={`/animal/${animal.name.toLowerCase()}`} key={animal.name} className="carousel-link">
-              <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false} className="carousel-small">
+              <Carousel infiniteLoop showThumbs={false} showStatus={false} className="carousel-small">
                 {animal.images.map((image, index) => (
                   <div key={index}>
                     <img
@@ -94,7 +94,7 @@ function Animals() {
         <div className="grid-container">
           {animalData.cats.map((animal) => (
             <Link to={`/animal/${animal.name.toLowerCase()}`} key={animal.name} className="carousel-link">
-              <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false} className="carousel-small">
+              <Carousel infiniteLoop showThumbs={false} showStatus={false} className="carousel-small">
                 {animal.images.map((image, index) => (
                   <div key={index}>
                     <img
