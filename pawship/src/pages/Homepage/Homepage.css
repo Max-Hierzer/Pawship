@@ -75,7 +75,7 @@ body {
   .carousel-text {
       position: absolute;
       top: 50%;
-      left: 20%;
+      left: 25%;
       transform: translate(-50%, -50%);
       text-align: center;
       color: white;
@@ -227,7 +227,7 @@ body {
   @media (max-width: 1400px) {
     .carousel-text {
         top: 50%;
-        left: 23%;
+        left: 27%;
         transform: translate(-50%, -40%);
 
         padding: 15px;
@@ -245,7 +245,7 @@ body {
   @media (max-width: 1000px) {
     .carousel-text {
         top: 50%;
-        left: 25%;
+        left: 28%;
         transform: translate(-50%, -40%);
 
         padding: 15px;
