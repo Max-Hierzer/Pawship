@@ -55,11 +55,11 @@ function Homepage() {
       <section className="features" aria-label="Why Choose Pawship">
         <div className="container">
             <h2>Warum Pawship?</h2>
-          <ul>
+          <ol>
             <li><strong>Für die Tiere:</strong> Jedes Tier verdient ein Zuhause, in dem es geliebt und geschätzt wird.</li>
             <li><strong>Für dich:</strong> Tiere bereichern unser Leben und schenken bedingungslose Liebe.</li>
             <li><strong>Mach den Unterschied:</strong> Gib einem Tier eine zweite Chance.</li>
-          </ul>
+          </ol>
         </div>
       </section>
 
