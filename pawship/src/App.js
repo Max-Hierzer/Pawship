@@ -19,14 +19,28 @@ function App() {
         <Route
         key={`dog-${animal.name}`}
         path={`/tiere/${animal.name.toLowerCase()}`}
-        element={<AnimalTemplate name={animal.name} images={animal.images} age={animal.age} gender={animal.gender} nature={animal.nature} />}
+
+        element={<AnimalTemplate
+                    name={animal.name}
+                    gender = {animal.gender}
+                    age = {animal.age}
+                    nature = {animal.nature}
+                    images={animal.images} />}
+
         />
       )),
       ...animalData.cats.map((animal) => (
         <Route
         key={`cat-${animal.name}`}
         path={`/tiere/${animal.name.toLowerCase()}`}
-        element={<AnimalTemplate name={animal.name} images={animal.images} age={animal.age} gender={animal.gender} nature={animal.nature} />}
+
+        element={<AnimalTemplate
+                    name={animal.name}
+                    gender = {animal.gender}
+                    age = {animal.age}
+                    nature = {animal.nature}
+                    images={animal.images} />}
+
         />
       )),
     ];
