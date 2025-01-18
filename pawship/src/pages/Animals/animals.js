@@ -70,6 +70,7 @@ function Animals({ animalData }) {
           ))}
         </div>
       </div>
+      <br />
     </div>
   );
 }
