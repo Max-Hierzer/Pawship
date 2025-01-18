@@ -9,23 +9,27 @@ function AnimalTemplate(data) {
     return (
         <div className="animalTemplate">
             <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false}>
-            {        data.images.map((i) => {
-                const picLink = linkToImages + i;
-                return (
-                    <div>
-                    <img src={picLink} alt={i} />
-                    </div>
-                );
-            })
+                {data.images.map((i) => {
+                    const picLink = linkToImages + i;
+                    return (
+                        <div>
+                            <img src={picLink} alt={i} />
+                        </div>
+                    );
+                })
 
-            }
+                }
             </Carousel>
             <h1>{data.name}</h1>
             <h2>Steckbrief</h2>
             <h3>Alter: {data.age}</h3>
             <h3>Geschlecht: {data.gender}</h3>
-
-
+            <h3>Wesen:</h3>
+            <ul>
+                {data.nature.map((trait, index) => (
+                    <li key={index}>{trait}</li>
+                ))}
+            </ul>
         </div>
     )
 }

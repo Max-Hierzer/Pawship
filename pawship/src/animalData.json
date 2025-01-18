@@ -2,12 +2,12 @@
   "dogs": [
     {
       "name": "Laika",
-      "gender": "",
-      "age": 0,
+      "gender": "weiblich",
+      "age": 4,
       "nature": [
-        "",
-        "",
-        ""
+        "zurückhaltend",
+        "verspielt",
+        "lernbegierig"
       ],
       "images": [
         "Laika1.jpg",
@@ -94,6 +94,66 @@
       "images": [
         "Nala1.jpg",
         "Nala2.jpg"
+      ]
+    },
+    {
+      "name": "Mogli",
+      "gender": "",
+      "age": 0,
+      "nature": [
+        "",
+        "",
+        ""
+      ],
+      "images": [
+        "Mogli1.jpg",
+        "Mogli2.jpg",
+        "Mogli3.jpg",
+        "Mogli4.jpg"
+      ]
+    },
+    {
+      "name": "Sammy",
+      "gender": "",
+      "age": 0,
+      "nature": [
+        "",
+        "",
+        ""
+      ],
+      "images": [
+        "Sammy1.jpg",
+        "Sammy2.jpg",
+        "Sammy3.jpg",
+        "Sammy4.jpg"
+      ]
+    },
+    {
+      "name": "Baghira",
+      "gender": "",
+      "age": 0,
+      "nature": [
+        "",
+        "",
+        ""
+      ],
+      "images": [
+        "Baghira1.jpg",
+        "Baghira2.jpg",
+        "Baghira3.jpg"
+      ]
+    },
+    {
+      "name": "Lucky",
+      "gender": "",
+      "age": 0,
+      "nature": [
+        "",
+        "",
+        ""
+      ],
+      "images": [
+        "Lucky1.jpeg"
       ]
     }
   ]
