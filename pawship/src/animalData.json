@@ -129,12 +129,12 @@
     },
     {
       "name": "Baghira",
-      "gender": "",
-      "age": 0,
+      "gender": "männlich",
+      "age": 10,
       "nature": [
-        "",
-        "",
-        ""
+        "sehr schüchtern",
+        "liebt Streicheleinheiten und Ruhe",
+        "ist ein Freigänger, der Auslauf benötigt"
       ],
       "images": [
         "Baghira1.jpg",
