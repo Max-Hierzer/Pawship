@@ -8,7 +8,7 @@ function AnimalTemplate(data) {
     const linkToImages = process.env.PUBLIC_URL + '/images/' + data.name + '/';
     return (
         <div className="animalTemplate">
-            <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false}>
+            <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false} className="atCarousel">
                 {data.images.map((i) => {
                     const picLink = linkToImages + i;
                     return (

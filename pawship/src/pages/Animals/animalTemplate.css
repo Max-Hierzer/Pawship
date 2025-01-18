@@ -1,0 +1,15 @@
+/* Carousel Slide Styling */
+.atCarousel .slide img {
+    max-height: auto; 
+    max-width: 50vw; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop or scale the image to fit */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    /* overflow: hidden; */
+}
+
+.animalTemplate {
+    display: flex;
+    flex-direction: column;g
+    align-items: center;
+    padding: 20px;
+}
