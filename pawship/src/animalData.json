@@ -2,6 +2,13 @@
   "dogs": [
     {
       "name": "Laika",
+      "gender": "",
+      "age": 0,
+      "nature": [
+        "",
+        "",
+        ""
+      ],
       "images": [
         "Laika1.jpg",
         "Laika2.jpg",
@@ -12,6 +19,13 @@
     },
     {
       "name": "Mia",
+      "gender": "",
+      "age": 0,
+      "nature": [
+        "",
+        "",
+        ""
+      ],
       "images": [
         "Mia1.jpeg",
         "Mia2.jpeg",
@@ -21,6 +35,13 @@
     },
     {
       "name": "JJ",
+      "gender": "",
+      "age": 0,
+      "nature": [
+        "",
+        "",
+        ""
+      ],
       "images": [
         "JJ1.jpg",
         "JJ2.jpg",
@@ -32,6 +53,13 @@
     },
     {
       "name": "Sammie",
+      "gender": "",
+      "age": 0,
+      "nature": [
+        "",
+        "",
+        ""
+      ],
       "images": [
         "Sammie1.jpg",
         "Sammie2.jpg",
@@ -42,6 +70,13 @@
   "cats": [
     {
       "name": "Simba",
+      "gender": "",
+      "age": 0,
+      "nature": [
+        "",
+        "",
+        ""
+      ],
       "images": [
         "Simba1.jpg",
         "Simba2.jpg"
@@ -49,6 +84,13 @@
     },
     {
       "name": "Nala",
+      "gender": "",
+      "age": 0,
+      "nature": [
+        "",
+        "",
+        ""
+      ],
       "images": [
         "Nala1.jpg",
         "Nala2.jpg"
