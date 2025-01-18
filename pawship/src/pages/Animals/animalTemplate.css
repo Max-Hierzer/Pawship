@@ -9,7 +9,7 @@
 
 .animalTemplate {
     display: flex;
-    flex-direction: column;g
+    flex-direction: column;
     align-items: center;
     padding: 20px;
 }
