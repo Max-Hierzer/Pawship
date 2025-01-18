@@ -19,12 +19,12 @@
     },
     {
       "name": "Mia",
-      "gender": "",
-      "age": 0,
+      "gender": "weiblich",
+      "age": 4,
       "nature": [
-        "",
-        "",
-        ""
+        "Diva",
+        "verspielt",
+        "gutaussehend"
       ],
       "images": [
         "Mia1.jpeg",
@@ -145,12 +145,12 @@
     },
     {
       "name": "Lucky",
-      "gender": "",
-      "age": 0,
+      "gender": "männlich",
+      "age": 14,
       "nature": [
-        "",
-        "",
-        ""
+        "faul",
+        "Schlafmütze",
+        "Kuscheltier"
       ],
       "images": [
         "Lucky1.jpeg"
