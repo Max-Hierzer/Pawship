@@ -98,12 +98,12 @@
     },
     {
       "name": "Mogli",
-      "gender": "",
-      "age": 0,
+      "gender": "männlich",
+      "age": 3,
       "nature": [
-        "",
-        "",
-        ""
+        "Verspielt",
+        "Macht lustige Pieps-Geräusche",
+        "Tollpatschig"
       ],
       "images": [
         "Mogli1.jpg",
@@ -114,12 +114,12 @@
     },
     {
       "name": "Sammy",
-      "gender": "",
-      "age": 0,
+      "gender": "Männlich",
+      "age": 5,
       "nature": [
-        "",
-        "",
-        ""
+        "Sehr gelassen",
+        "Jagt gerne Mäuse",
+        "Purfect"
       ],
       "images": [
         "Sammy1.jpg",
