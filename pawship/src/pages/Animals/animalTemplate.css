@@ -1,7 +1,7 @@
 /* Carousel Slide Styling */
 .atCarousel .slide img {
-    width: 80%;
-    height: auto; /* Maintain aspect ratio */
+    width: auto;
+    max-height: 500px ; /* Maintain aspect ratio */
     object-fit: cover; /* Crop or scale the image to fit */
     border-radius: 10px; /* Optional: Add rounded corners */
 }
