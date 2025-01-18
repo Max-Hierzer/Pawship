@@ -19,18 +19,25 @@ function AnimalTemplate(data) {
 
                 }
             </Carousel>
-            <h1>{data.name}</h1>
-            <h2>Steckbrief</h2>
-            <h3>Alter: {data.age}</h3>
-            <h3>Geschlecht: {data.gender}</h3>
+            <div id='steckbrief'>
+                <h1>{data.name}</h1>
+                <h2>Steckbrief</h2>
+                <div className="info">
+                    <h3>
+                        <span className="label">Alter:</span> <span className="value">{data.age}</span>
+                    </h3>
+                    <h3>
+                        <span className="label">Geschlecht:</span> <span className="value">{data.gender}</span>
+                    </h3>
+                </div>
 
-            <h3>Natur:</h3>
-            <ul>
-            {data.nature.map((nat)=>(
-                <li key = {data.name}>{nat}</li>
-            ))}
-            </ul>
-
+                <h3><span className='label'>Natur:</span></h3>
+                <ul>
+                    {data.nature.map((nat) => (
+                        <li key={data.name}>{nat}</li>
+                    ))}
+                </ul>
+            </div>
         </div>
     )
 }
