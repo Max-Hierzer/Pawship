@@ -5,7 +5,6 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 function AnimalTemplate(data) {
     const linkToImages = process.env.PUBLIC_URL + '/images/' + data.name + '/';
-    ;
 
     return (
         <div className="animalTemplate">
