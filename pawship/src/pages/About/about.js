@@ -1,6 +1,13 @@
 import React from 'react';
 import './about.css';
 
+const alex = process.env.PUBLIC_URL + '/images/Team/' + 'alex.png';
+const max = process.env.PUBLIC_URL + '/images/Team/' + 'max.png';
+const tobias = process.env.PUBLIC_URL + '/images/Team/' + 'tobias.png';
+const johanna = process.env.PUBLIC_URL + '/images/Team/' + 'johanna.png';
+const nevena = process.env.PUBLIC_URL + '/images/Team/' + 'nevena.png';
+const philipp = process.env.PUBLIC_URL + '/images/Team/' + 'philipp.png';
+
 const About = () => {
   const team = [
     { title: 'Leitung', name: 'Johanna Theissing, Max Hierzer' },
@@ -21,6 +28,34 @@ const About = () => {
           </div>
         ))}
       </div>
+      <div className="images">
+  <div className="image-item">
+    <img src={alex} alt="Alex" />
+    <p>Alex</p>
+  </div>
+  <div className="image-item">
+    <img src={tobias} alt="Tobias" />
+    <p>Tobias</p>
+  </div>
+  <div className="image-item">
+    <img src={max} alt="Max" />
+    <p>Max</p>
+  </div>
+  <div className="image-item">
+    <img src={johanna} alt="Johanna" />
+    <p>Johanna</p>
+  </div>
+  <div className="image-item">
+    <img src={philipp} alt="Philipp" />
+    <p>Philipp</p>
+  </div>
+  <div className="image-item">
+    <img src={nevena} alt="Nevena" />
+    <p>Nevena</p>
+  </div>
+</div>
+
+
     </div>
   );
 };
