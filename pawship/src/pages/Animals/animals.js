@@ -7,7 +7,6 @@ import './animals.css';
 
 function Animals(animalData) {
   const basePath = `${process.env.PUBLIC_URL}/images/`;
-  console.log(animalData)
   return (
     <div className="Animals">
       <div className="Dogs">
