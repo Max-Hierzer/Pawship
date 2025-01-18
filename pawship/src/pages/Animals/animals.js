@@ -1,53 +1,72 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './animals.css';
 
-
-function Animals(animalData) {
+function Animals({ animalData }) {
   const basePath = `${process.env.PUBLIC_URL}/images/`;
+  const navigate = useNavigate();
+
+  const handleImageClick = (path) => {
+    navigate(path);
+  };
+
   return (
     <div className="Animals">
       <div className="Dogs">
         <h1>Unsere Hunde</h1>
         <div className="grid-container">
-          {animalData.animalData.dogs.map((animal) => (
-            <Link to={`/tiere/${animal.name.toLowerCase()}`} key={animal.name} className="carousel-link">
-              <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false} className="carousel-small">
-                {animal.images.map((image, index) => (
-                  <div key={index}>
-                    <img
-                      src={`${basePath}${animal.name}/${image}`}
-                      alt={`${animal.name}-${index}`}
-                      className="animal-thumbnail"
-                    />
-                  </div>
-                ))}
-              </Carousel>
-              <p>{animal.name}</p>
-            </Link>
+          {animalData.dogs.map((animal) => (
+            <Carousel
+              key={animal.name}
+              infiniteLoop
+              showThumbs={false}
+              showStatus={false}
+              className="carousel-small"
+            >
+            {animal.images.map((image, index) => (
+              <div
+              key={index}
+              onClick={() => handleImageClick(`/tiere/${animal.name.toLowerCase()}`)}
+              style={{ cursor: 'pointer' }}
+              >
+                <img
+                  src={`${basePath}${animal.name}/${image}`}
+                  alt={`${animal.name}-${index}`}
+                  className="animal-thumbnail"
+                />
+              </div>
+            ))}
+            </Carousel>
           ))}
         </div>
       </div>
       <div className="Cats">
         <h1>Unsere Katzen</h1>
         <div className="grid-container">
-          {animalData.animalData.cats.map((animal) => (
-            <Link to={`/tiere/${animal.name.toLowerCase()}`} key={animal.name} className="carousel-link">
-              <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false} className="carousel-small">
-                {animal.images.map((image, index) => (
-                  <div key={index}>
-                    <img
-                      src={`${basePath}${animal.name}/${image}`}
-                      alt={`${animal.name}-${index}`}
-                      className="animal-thumbnail"
-                    />
-                  </div>
-                ))}
-              </Carousel>
-              <p>{animal.name}</p>
-            </Link>
+          {animalData.cats.map((animal) => (
+            <Carousel
+              key={animal.name}
+              infiniteLoop
+              showThumbs={false}
+              showStatus={false}
+              className="carousel-small"
+            >
+            {animal.images.map((image, index) => (
+              <div
+                key={index}
+                onClick={() => handleImageClick(`/tiere/${animal.name.toLowerCase()}`)}
+                style={{ cursor: 'pointer' }}
+              >
+              <img
+                src={`${basePath}${animal.name}/${image}`}
+                alt={`${animal.name}-${index}`}
+                className="animal-thumbnail"
+              />
+              </div>
+            ))}
+            </Carousel>
           ))}
         </div>
       </div>
