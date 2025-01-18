@@ -1,53 +1,78 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import { useNavigate } from 'react-router-dom';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './animals.css';
-import AnimalTemplate from './animalTemplate.js';
 
+function Animals({ animalData }) {
+  const basePath = `${process.env.PUBLIC_URL}/images/`;
+  const navigate = useNavigate();
 
-// const animalDataDog = [
-//   {
-//     name: 'Laika', images: [
-//       require('../../images/Laika/IMG_20241101_150555.jpg'),
-//       require('../../images/Laika/IMG_20220720_151314.jpg')
-//     ],
-//   },
-//   {
-//     name: 'Mia', images: [
-//       require('../../images/Mia/7A60B11E-7613-4C01-BB46-A76FE5ABD2EA_1_105_c.jpeg'),
-//       require('../../images/Mia/7147BC44-8A9E-4B98-8C39-EE97BB89533E_1_105_c.jpeg')
-//     ],
-//   }
-//   // { name: 'JJ', image: require('../../images/JJ/Foto 29.10.23, 10 46 30.jpg') },
-//   // { name: 'Sammie', image: require('../../images/Sammie/Foto 29.10.23, 10 59 14.jpg') }
-// ];
+  const handleImageClick = (path) => {
+    navigate(path);
+  };
 
-// const animalDataCat = [
-//   { name: 'Simba', image: require('../../images/Simba/Foto 25.08.24, 11 22 43.jpg') },
-//   { name: 'Nala', image: require('../../images/Nala/Foto 10.07.24, 20 34 47.jpg') }
-// ]
-
-
-
-function Animals() {
   return (
     <div className="Animals">
       <div className="Dogs">
         <h1>Unsere Hunde</h1>
+        <div className="grid-container">
+          {animalData.dogs.map((animal) => (
+            <Carousel
+              key={animal.name}
+              infiniteLoop
+              showThumbs={false}
+              showStatus={false}
+              className="carousel-small"
+            >
+            {animal.images.map((image, index) => (
+              <div
+              key={index}
+              onClick={() => handleImageClick(`/tiere/${animal.name.toLowerCase()}`)}
+              style={{ cursor: 'pointer' }}
+              >
+                <img
+                  src={`${basePath}${animal.name}/${image}`}
+                  alt={`${animal.name}-${index}`}
+                  className="animal-thumbnail"
+                />
+              </div>
+            ))}
+            </Carousel>
+          ))}
+        </div>
       </div>
       <div className="Cats">
         <h1>Unsere Katzen</h1>
         <div className="grid-container">
-          {/* Similar structure for cats */}
+          {animalData.cats.map((animal) => (
+            <Carousel
+              key={animal.name}
+              infiniteLoop
+              showThumbs={false}
+              showStatus={false}
+              className="carousel-small"
+            >
+            {animal.images.map((image, index) => (
+              <div
+                key={index}
+                onClick={() => handleImageClick(`/tiere/${animal.name.toLowerCase()}`)}
+                style={{ cursor: 'pointer' }}
+              >
+              <img
+                src={`${basePath}${animal.name}/${image}`}
+                alt={`${animal.name}-${index}`}
+                className="animal-thumbnail"
+              />
+              </div>
+            ))}
+            </Carousel>
+          ))}
         </div>
       </div>
-      <AnimalTemplate name = {"Laika"} age = {12} gender = {"weiblich"} description = {"test"} images = {['IMG_20220720_151314.jpg', 'IMG_20230427_170925.jpg', 'IMG_20230805_132854.jpg', 'IMG_20231107_191339.jpg']} />
+      <br />
     </div>
   );
 }
 
-
 export default Animals;
-
