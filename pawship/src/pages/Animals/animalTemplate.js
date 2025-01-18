@@ -2,6 +2,7 @@ import React from 'react';
 // import './animalTemplate.css';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import './animalTemplate.css';
 
 function AnimalTemplate(data) {
     const linkToImages = process.env.PUBLIC_URL + '/images/' + data.name + '/';
