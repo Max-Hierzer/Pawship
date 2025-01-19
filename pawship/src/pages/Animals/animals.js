@@ -15,7 +15,7 @@ function Animals({ animalData }) {
   return (
     <div className="Animals">
       <div className="Dogs">
-        <h1>Unsere Hunde</h1>
+        <div className='title-box'><h1>Unsere Hunde</h1></div>
         <div className="grid-container">
           {animalData.dogs.map((animal) => (
             <Carousel
@@ -25,25 +25,27 @@ function Animals({ animalData }) {
               showStatus={false}
               className="carousel-small"
             >
-            {animal.images.map((image, index) => (
-              <div
-              key={index}
-              onClick={() => handleImageClick(`/tiere/${animal.name.toLowerCase()}`)}
-              style={{ cursor: 'pointer' }}
-              >
-                <img
-                  src={`${basePath}${animal.name}/${image}`}
-                  alt={`${animal.name}-${index}`}
-                  className="animal-thumbnail"
-                />
-              </div>
-            ))}
+                {animal.images.map((image, index) => (
+                  <div
+                    key={index}
+                    onClick={() => handleImageClick(`/tiere/${animal.name.toLowerCase()}`)}
+                    style={{ cursor: 'pointer' }}
+                  >
+                    <p className='animal-name'>{animal.name}</p>
+                    <img
+                      src={`${basePath}${animal.name}/${image}`}
+                      alt={`${animal.name}-${index}`}
+                      className="animal-thumbnail"
+                    />
+
+                  </div>
+                ))}
             </Carousel>
           ))}
         </div>
       </div>
       <div className="Cats">
-        <h1>Unsere Katzen</h1>
+        <div className='title-box'><h1>Unsere Katzen</h1></div>
         <div className="grid-container">
           {animalData.cats.map((animal) => (
             <Carousel
@@ -53,19 +55,20 @@ function Animals({ animalData }) {
               showStatus={false}
               className="carousel-small"
             >
-            {animal.images.map((image, index) => (
-              <div
-                key={index}
-                onClick={() => handleImageClick(`/tiere/${animal.name.toLowerCase()}`)}
-                style={{ cursor: 'pointer' }}
-              >
-              <img
-                src={`${basePath}${animal.name}/${image}`}
-                alt={`${animal.name}-${index}`}
-                className="animal-thumbnail"
-              />
-              </div>
-            ))}
+              {animal.images.map((image, index) => (
+                <div
+                  key={index}
+                  onClick={() => handleImageClick(`/tiere/${animal.name.toLowerCase()}`)}
+                  style={{ cursor: 'pointer' }}
+                >
+                  <p className='animal-name'>{animal.name}</p>
+                  <img
+                    src={`${basePath}${animal.name}/${image}`}
+                    alt={`${animal.name}-${index}`}
+                    className="animal-thumbnail"
+                  />
+                </div>
+              ))}
             </Carousel>
           ))}
         </div>
