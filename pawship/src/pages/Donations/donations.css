@@ -1,6 +1,5 @@
 .Donations {
     text-align: center;
-    margin: 20px;
 }
 
 .donation-box {
@@ -8,8 +7,7 @@
     border-radius: 10px;
     max-width: 600px;
     margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     margin-bottom: 10px;
 }
 
@@ -23,7 +21,6 @@ input[name="option"] {
     height: 20px;
     border: 2px solid #4CAF50;
     border-radius: 50%;
-    align-items: center;
     margin-left: 5px;
     margin-bottom: 20px;
 }
@@ -33,14 +30,15 @@ input[name="option"] {
     gap: 10px;
     justify-content: center;
     margin: 20px 0;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .prices input[type="radio"] {
     position: absolute;
     opacity: 0;
-    cursor: pointer;
 }
-
 
 .radio-box {
     display: flex;
@@ -54,10 +52,10 @@ input[name="option"] {
     font-size: 16px;
     color: black;
     transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px;
 }
 
-
-input[type="radio"]:checked+.radio-box {
+input[type="radio"]:checked + .radio-box {
     background-color: #4CAF50;
     color: white;
 }
@@ -67,35 +65,37 @@ input[type="radio"]:checked+.radio-box {
 }
 
 .self-price input[type="number"] {
-    width: 300px;
+    width: 70%;
     padding: 8px 15px;
     font-size: 16px;
     border: 2px solid #4CAF50;
     border-radius: 10px;
-    outline: none;
     box-sizing: border-box;
     margin-top: 10px;
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .data {
     background-color: rgb(217, 251, 217);
     border-radius: 10px;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     margin-bottom: 10px;
 }
 
-input[type=text] {
-    width: 400px;
+input[type="text"] {
+    width: 70%;
+    max-width: 800px;
     padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    margin: 10px auto;
+    display: block;
 }
 
 select,
@@ -104,22 +104,54 @@ input[type="text"] {
     font-size: 16px;
     border-radius: 10px;
     border: 2px solid #4CAF50;
-    outline: none;
     box-sizing: border-box;
 }
 
 select {
-    width: 400px;
-    /* Width for the dropdown */
+    width: 70%;
+    max-width: 800px;
 }
 
 input[type="submit"] {
-    width: 500px;
-    padding: 6px;
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 650px;
+    padding: 10px;
     background-color: #4CAF50;
-    color: rgb(255, 255, 255);
+    color: white;
     font-weight: bold;
     border-radius: 10px;
-    border-color: #4CAF50;
-    box-shadow: #4CAF50;
+    border: 2px solid #4CAF50;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .donation-box,
+    .data {
+        width: 90%;
+    }
+
+    .prices {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .radio-box {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .self-price input[type="number"],
+    select,
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    input[type="text"],
+    select {
+        width: 100%;
+    }
 }

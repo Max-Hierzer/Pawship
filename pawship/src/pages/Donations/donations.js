@@ -58,7 +58,6 @@ function Donations() {
               <option value="" disabled selected>Anrede</option>
               <option value="frau">Frau</option>
               <option value="herr">Herr</option>
-              <option value="firma">Firma</option>
             </select>
             <input type='text' placeholder='Vorname' />
             <input type='text' placeholder='Nachname' />
@@ -67,7 +66,7 @@ function Donations() {
             <input type='text' placeholder='Ort' />
             <input type='text' placeholder='Land' />
             <input type='text' placeholder='Telefon' />
-            <input type='text' placeholder='Email' />
+            <input type='email' placeholder='Email' />
           </div>
         </div>
 
