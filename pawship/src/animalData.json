@@ -10,11 +10,11 @@
         "lernbegierig"
       ],
       "images": [
-        "Laika1.jpg",
-        "Laika2.jpg",
-        "Laika3.jpg",
-        "Laika4.jpg",
-        "Laika5.jpg"
+        "Laika1.png",
+        "Laika2.png",
+        "Laika3.png",
+        "Laika4.png",
+        "Laika5.png"
       ]
     },
     {
@@ -27,9 +27,9 @@
         "gutaussehend"
       ],
       "images": [
-        "Mia1.jpeg",
-        "Mia2.jpeg",
-        "Mia4.jpeg"
+        "Mia1.png",
+        "Mia2.png",
+        "Mia4.png"
       ]
     },
     {
@@ -42,12 +42,12 @@
         ""
       ],
       "images": [
-        "JJ1.jpg",
-        "JJ2.jpg",
-        "JJ3.jpg",
-        "JJ4.jpg",
-        "JJ5.jpg",
-        "JJ6.jpg"
+        "JJ1.png",
+        "JJ2.png",
+        "JJ3.png",
+        "JJ4.png",
+        "JJ5.png",
+        "JJ6.png"
       ]
     },
     {
@@ -60,9 +60,9 @@
         ""
       ],
       "images": [
-        "Sammie1.jpg",
-        "Sammie2.jpg",
-        "Sammie3.jpg"
+        "Sammie1.png",
+        "Sammie2.png",
+        "Sammie3.png"
       ]
     }
   ],
@@ -77,8 +77,8 @@
         ""
       ],
       "images": [
-        "Simba1.jpg",
-        "Simba2.jpg"
+        "Simba1.png",
+        "Simba2.png"
       ]
     },
     {
@@ -91,8 +91,8 @@
         ""
       ],
       "images": [
-        "Nala1.jpg",
-        "Nala2.jpg"
+        "Nala1.png",
+        "Nala2.png"
       ]
     },
     {
@@ -105,10 +105,10 @@
         "Tollpatschig"
       ],
       "images": [
-        "Mogli1.jpg",
-        "Mogli2.jpg",
-        "Mogli3.jpg",
-        "Mogli4.jpg"
+        "Mogli1.png",
+        "Mogli2.png",
+        "Mogli3.png",
+        "Mogli4.png"
       ]
     },
     {
@@ -121,10 +121,10 @@
         "Purfect"
       ],
       "images": [
-        "Sammy1.jpg",
-        "Sammy2.jpg",
-        "Sammy3.jpg",
-        "Sammy4.jpg"
+        "Sammy1.png",
+        "Sammy2.png",
+        "Sammy3.png",
+        "Sammy4.png"
       ]
     },
     {
@@ -137,9 +137,9 @@
         "ist ein Freigänger, der Auslauf benötigt"
       ],
       "images": [
-        "Baghira1.jpg",
-        "Baghira2.jpg",
-        "Baghira3.jpg"
+        "Baghira1.png",
+        "Baghira2.png",
+        "Baghira3.png"
       ]
     },
     {
@@ -152,7 +152,7 @@
         "Kuscheltier"
       ],
       "images": [
-        "Lucky1.jpeg"
+        "Lucky1.png"
       ]
     }
   ]
