@@ -8,6 +8,7 @@ import About from './pages/About/about.js';
 import Animals from './pages/Animals/animals.js';
 import AnimalTemplate from './pages/Animals/animalTemplate';
 import Donations from './pages/Donations/donations.js';
+import Payment from './pages/Payment/payment.js';
 import './styles/App.css';
 import animalData from './animalData.json'
 
@@ -57,6 +58,7 @@ function App() {
     <Route path="/tiere" element={<Animals animalData={animalData} />} />
     <Route path="/spenden" element={<Donations />} />
     <Route path="/about" element={<About />} />
+    <Route path="/payment" element={<Payment />} /> 
     {generateAnimalRoutes(animalData)}
     </Routes>
     </main>
