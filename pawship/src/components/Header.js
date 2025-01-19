@@ -11,7 +11,6 @@ function Header() {
                     <img src={logo} alt="Tierheim Logo" />
                 </a>
                 <Navigation />
-                <button className="donate-button">Spenden</button>
             </div>
         </header>
     );
