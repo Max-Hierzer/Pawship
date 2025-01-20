@@ -34,12 +34,12 @@
     },
     {
       "name": "JJ",
-      "gender": "",
-      "age": 0,
+      "gender": "männlich",
+      "age": 4,
       "nature": [
-        "",
-        "",
-        ""
+        "verspielt",
+        "liebesbedürftig",
+        "speziell"
       ],
       "images": [
         "JJ1.png",
@@ -52,12 +52,12 @@
     },
     {
       "name": "Sammie",
-      "gender": "",
-      "age": 0,
+      "gender": "männlich",
+      "age": 4,
       "nature": [
-        "",
-        "",
-        ""
+        "fröhlich",
+        "aktiv",
+        "liebesbedürftig"
       ],
       "images": [
         "Sammie1.png",
@@ -69,12 +69,12 @@
   "cats": [
     {
       "name": "Simba",
-      "gender": "",
-      "age": 0,
+      "gender": "männlich",
+      "age": 6,
       "nature": [
-        "",
-        "",
-        ""
+        "neugierig",
+        "verschmust",
+        "vokal"
       ],
       "images": [
         "Simba1.png",
@@ -83,12 +83,12 @@
     },
     {
       "name": "Nala",
-      "gender": "",
-      "age": 0,
+      "gender": "weiblich",
+      "age": 6,
       "nature": [
-        "",
-        "",
-        ""
+        "verschmust",
+        "entspannt",
+        "anhänglich"
       ],
       "images": [
         "Nala1.png",
