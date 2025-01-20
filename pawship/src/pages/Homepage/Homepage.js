@@ -42,18 +42,16 @@ function Homepage() {
           </div>
         </div>
       </Carousel>
-      <section className="about" aria-label="About Pawship">
-        <div className="container">
+
+
+        <div className="content">
             <h2>Willkommen bei Pawship</h2>
           <p>
             Wir vermitteln nicht nur Tiere – wir schaffen Verbindungen fürs Leben. Unsere Mission ist es, liebevollen Tieren eine zweite Chance zu geben und Familien mit ihrem perfekten tierischen Begleiter zusammenzubringen.
           </p>
         </div>
-      </section>
 
-      {/* Features Section */}
-      <section className="features" aria-label="Why Choose Pawship">
-        <div className="container">
+        <div className="content">
             <h2>Warum Pawship?</h2>
           <ol>
             <li><strong>Für die Tiere:</strong> Jedes Tier verdient ein Zuhause, in dem es geliebt und geschätzt wird.</li>
@@ -61,11 +59,8 @@ function Homepage() {
             <li><strong>Mach den Unterschied:</strong> Gib einem Tier eine zweite Chance.</li>
           </ol>
         </div>
-      </section>
 
-      {/* Call-to-Action Section */}
-      <section className="cta" aria-label="Make a Difference">
-        <div className="container">
+        <div className="content">
             <h2>Mach den Unterschied!</h2>
           <p>
             Durch Adoption gibst du einem Tier nicht nur ein Zuhause, sondern auch die Chance auf ein glückliches Leben. Schau dir unsere Tiere an und finde deinen neuen besten Freund!
@@ -74,11 +69,8 @@ function Homepage() {
             Adopt Now
           </button>
         </div>
-      </section>
 
-      {/* Testimonials Section */}
-      <section className="testimonials" aria-label="What People Say">
-        <div className="container">
+        <div className="content">
             <h2>Was unsere Besucher sagen</h2>
           <blockquote>
             "Dank Pawship habe ich meinen besten Freund gefunden! Ich könnte nicht glücklicher sein." – Sarah M.
@@ -87,11 +79,8 @@ function Homepage() {
             "Die Erfahrung war wunderbar. Die Mitarbeiter sind so engagiert und hilfreich!" – Johannes K.
           </blockquote>
         </div>
-      </section>
 
-      {/* Steps Section */}
-      <section className="how-it-works" aria-label="How It Works">
-        <div className="container">
+        <div className="content">
             <h2>So funktioniert’s</h2>
           <ol>
             <li>
@@ -105,7 +94,6 @@ function Homepage() {
             </li>
           </ol>
         </div>
-      </section>
     </div>
   );
 }
