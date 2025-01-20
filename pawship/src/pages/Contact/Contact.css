@@ -5,15 +5,19 @@
   }
   
   .contact-title {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 5vw, 2rem);  
     font-weight: bold;
     margin-bottom: 2rem;
     color: #333;
     border-radius: 10px;
     background-color: rgb(217, 251, 217);
-    margin-left: 20%;
-    margin-right: 20%;
-  }
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem 1rem;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
   
   .open, .contact-info, .message-form, .contact-details {
     margin-bottom: 4rem;
@@ -119,12 +123,19 @@ form textarea {
   border: 1px solid #cccccc;
   border-radius: 5px;
   font-size: 14px;
-  resize: vertical; /* Benutzer kann die Größe nur vertikal ändern */
-  min-height: 100px; /* Mindesthöhe für das textarea */
+  resize: vertical; 
+  min-height: 100px; 
 }
 
 form textarea:focus {
   border-color: #6666ff;
   outline: none;
   box-shadow: 0 0 4px rgba(102, 102, 255, 0.6);
+}
+
+@media screen and (max-width: 480px) {
+  .contact-title {
+      width: 90%;
+      padding: 0.5rem;
+  }
 }
