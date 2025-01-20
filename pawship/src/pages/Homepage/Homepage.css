@@ -12,15 +12,14 @@ body {
 }
 
 .content {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    max-width: 800px; /* Limits the width of the content box */
+    margin: 30px auto; /* Centers the content horizontally */
+    padding: 20px; /* Inner padding inside the box */
+    border: 1px solid #ccc; /* Adds a subtle border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a light shadow */
+    background-color: #fff; /* White background */
+    width: calc(100% - 100px); /* Ensures 50px space on both sides */
     text-align: center;
 }
 
@@ -130,7 +129,7 @@ body {
         font-size: 1rem;
     }
 
-    .container h2 {
+    .content h2 {
       font-size: 1.9rem;
     }
 }
@@ -151,18 +150,18 @@ body {
         font-size: 0.8rem;
     }
 
-    .container h2 {
+    .content h2 {
       font-size: 1.7rem;
     }
 
-    .container p, .container ol li {
+    .content p, .content ol li, .content blockquote  {
       font-size: 1.2rem;
     }
 }
 
 @media (max-width: 768px) {
     .carousel-text {
-        top: 45%;
+        top: 40%;
         left: 25%;
         width: 40%;
         transform: translate(-50%, -40%);
@@ -182,19 +181,11 @@ body {
         font-size: 0.7rem;
     }
 
-    .hero h1 {
-      font-size: 2em;
-    }
-
-    .hero p {
-      font-size: 1em;
-    }
-
-    .container h2 {
+    .content h2 {
       font-size: 1.5rem;
     }
 
-    .container p, .container ol li {
+    .content p, .content ol li, .content blockquote  {
       font-size: 1.1rem;
     }
 }
@@ -220,19 +211,11 @@ body {
         font-size: 0.6rem;
     }
 
-    .hero {
-      padding: 50px 0;
-    }
-
-    .hero h1 {
-      font-size: 1.5em;
-    }
-
-    .container h2 {
+    .content h2 {
       font-size: 1.4rem;
     }
 
-    .container p, .container ol li {
+    .content p, .content ol li, .content blockquote  {
       font-size: 1rem;
     }
 }
