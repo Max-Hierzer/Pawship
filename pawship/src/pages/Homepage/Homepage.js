@@ -106,13 +106,6 @@ function Homepage() {
           </ol>
         </div>
       </section>
-
-      {/* Footer Section */}
-      <footer className="footer" aria-label="Footer">
-        <div className="container">
-          <p>© 2025 Pawship. Alle Rechte vorbehalten.</p>
-        </div>
-      </footer>
     </div>
   );
 }
