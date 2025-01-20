@@ -12,14 +12,14 @@ body {
 }
 
 .content {
-    max-width: 800px; /* Limits the width of the content box */
-    margin: 30px auto; /* Centers the content horizontally */
-    padding: 20px; /* Inner padding inside the box */
-    border: 1px solid #ccc; /* Adds a subtle border */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a light shadow */
-    background-color: #fff; /* White background */
-    width: calc(100% - 100px); /* Ensures 50px space on both sides */
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: calc(100% - 100px);
     text-align: center;
 }
 
@@ -87,6 +87,7 @@ body {
     padding: 20px;
     border-radius: 5px;
     max-width: 80%;
+    width: 35%;
 }
 
 .carousel-text2 {
@@ -100,6 +101,7 @@ body {
     padding: 20px;
     border-radius: 5px;
     max-width: 80%;
+    width: 35%;
 }
 
 .carousel-text h1, .carousel-text2 h1 {
@@ -154,7 +156,7 @@ body {
       font-size: 1.7rem;
     }
 
-    .content p, .content ol li, .content blockquote  {
+    .content p, .content ol li, .content blockquote, .adopt-button  {
       font-size: 1.2rem;
     }
 }
@@ -185,21 +187,22 @@ body {
       font-size: 1.5rem;
     }
 
-    .content p, .content ol li, .content blockquote  {
+    .content p, .content ol li, .content blockquote, .adopt-button  {
       font-size: 1.1rem;
+    }
+
+    .content ol li {
+      padding-left: 20px;
     }
 }
 
 @media (max-width: 480px) {
     .carousel-text {
-        top: 45%;
-        max-width: 95%;
         padding: 10px;
     }
 
     .carousel-text2 {
         top: 50%;
-        max-width: 95%;
         padding: 10px;
     }
 
@@ -217,5 +220,76 @@ body {
 
     .content p, .content ol li, .content blockquote  {
       font-size: 1rem;
+      padding-left: 0;
+    }
+}
+
+@media (max-width: 380px) {
+    .carousel-text {
+        padding: 5px;
+    }
+
+    .carousel-text2 {
+        padding: 5px;
+    }
+
+    .carousel-text h1, .carousel-text2 h1 {
+        font-size: 0.9rem;
+    }
+
+    .carousel-text p, .carousel-text2 p {
+        font-size: 0.5rem;
+    }
+
+    .content h2 {
+      font-size: 1.3rem;
+    }
+
+    .content p, .content ol li, .content blockquote  {
+      font-size: 0.9rem;
+    }
+
+    .adopt-button {
+      font-size: 1rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .carousel-text h1, .carousel-text2 h1 {
+        font-size: 0.8rem;
+    }
+
+    .carousel-text p, .carousel-text2 p {
+        font-size: 0.4rem;
+    }
+
+    .content h2 {
+      font-size: 1.2rem;
+    }
+
+    .content p, .content ol li, .content blockquote  {
+      font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .carousel-text h1, .carousel-text2 h1 {
+        font-size: 0.7rem;
+    }
+
+    .carousel-text p, .carousel-text2 p {
+        font-size: 0.3rem;
+    }
+
+    .content h2 {
+      font-size: 1.1rem;
+    }
+
+    .content p, .content ol li, .content blockquote  {
+      font-size: 0.7rem;
+    }
+
+    .adopt-button {
+      font-size: 0.9rem;
     }
 }
