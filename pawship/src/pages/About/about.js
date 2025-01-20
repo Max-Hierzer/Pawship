@@ -7,6 +7,7 @@ const tobias = process.env.PUBLIC_URL + '/images/Team/' + 'tobias.png';
 const johanna = process.env.PUBLIC_URL + '/images/Team/' + 'johanna.png';
 const nevena = process.env.PUBLIC_URL + '/images/Team/' + 'nevena.png';
 const philipp = process.env.PUBLIC_URL + '/images/Team/' + 'philipp.png';
+const gernot = process.env.PUBLIC_URL + '/images/Team/' + 'gernot.png';
 
 const About = () => {
   const team = [
@@ -44,6 +45,10 @@ const About = () => {
   <div className="image-item">
     <img src={johanna} alt="Johanna" />
     <p>Johanna</p>
+  </div>
+  <div className="image-item">
+    <img src={gernot} alt="Gernot" />
+    <p>Gernot</p>
   </div>
   <div className="image-item">
     <img src={philipp} alt="Philipp" />
