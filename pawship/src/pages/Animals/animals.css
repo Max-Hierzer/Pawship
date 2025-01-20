@@ -1,3 +1,4 @@
+
 h1 {
   text-align: center;
 }
@@ -65,44 +66,12 @@ h1 {
   border-radius: 8px;
 }
 
-.carousel-small .carousel .slide img {
+.carousel-small .slide img {
   height: 250px;
   object-fit: cover;
 }
 
-#steckbrief {
-  text-align: center;
-  margin: auto;
-}
 
-#steckbrief h1, #steckbrief h2 {
-  margin-bottom: 1rem;
-}
 
-#steckbrief .info {
-  display: inline-block;
-  text-align: left;
-}
 
-#steckbrief h3 {
-  font-weight: normal;
-  text-align: center;
-}
-
-#steckbrief .label {
-  font-weight: bold;
-}
-
-#steckbrief .value {
-  font-weight: normal;
-}
-
-#steckbrief ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-#steckbrief ul li {
-  text-align: center;
-}
 

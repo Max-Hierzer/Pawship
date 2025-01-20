@@ -13,28 +13,29 @@ function AnimalTemplate(data) {
                     const picLink = linkToImages + i;
                     return (
                         <div key={i}>
-                        <img src={picLink} alt={i} />
+                            <img src={picLink} alt={i} />
                         </div>
                     );
                 })}
             </Carousel>
             <div id="steckbrief">
-                <h1>{data.name}</h1>
-                <h2>Steckbrief</h2>
-                <div className="info">
-                    <h3>
-                    <span className="label">Alter:</span> <span className="value">{data.age}</span>
-                    </h3>
-                    <h3>
-                    <span className="label">Geschlecht:</span> <span className="value">{data.gender}</span>
-                    </h3>
+                <div className='attitle-box'><h1>{data.name}</h1></div>
+                <div className='steckbrief'><h2>Steckbrief</h2>
+                    <div className="info">
+                        <h3>
+                            <span className="label">Alter:</span> <span className="value">{data.age}</span>
+                        </h3>
+                        <h3>
+                            <span className="label">Geschlecht:</span> <span className="value">{data.gender}</span>
+                        </h3>
+                        <h3><span className="label">Natur:</span></h3>
+                        <ul>
+                            {data.nature.map((nat, index) => (
+                                <li key={index}>{nat}</li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
-                <h3><span className="label">Natur:</span></h3>
-                <ul>
-                {data.nature.map((nat, index) => (
-                    <li key={index}>{nat}</li>
-                ))}
-                </ul>
             </div>
         </div>
 
