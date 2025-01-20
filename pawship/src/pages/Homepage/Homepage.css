@@ -35,7 +35,7 @@ body {
   }
 
   .container h2 {
-    background-color: #a5d6a7;
+    background-color: rgb(217, 251, 217);
     padding: 15px;
     border-radius: 15px; /* Rounded edges */
     display: block; /* Ensure block-level display */
