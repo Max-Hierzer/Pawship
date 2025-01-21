@@ -1,6 +1,12 @@
 # Pawship - Find Your Pawfect Partner
 
-![Pawship Logo](images/logo.png)
+<p align="center">
+  <img src="images/logo.png" alt="Pawship Logo" />
+</p>
+
+<p align="center">
+  <a href="https://sandbox.bulme.at/~tobias.prasser/">Besuche unsere Website</a>
+</p>
 
 Willkommen bei **Pawship** – der besten Plattform, um dein ideales Haustier zu finden! Wir verbinden Tierfreunde mit ihren perfekten tierischen Begleitern. Bei uns findest du nicht nur einen neuen Freund, sondern auch einen Partner fürs Leben. Unser Ziel ist es, Tieren ein Zuhause zu geben und Menschen mit ihren treuen Begleitern zusammenzubringen.
 
