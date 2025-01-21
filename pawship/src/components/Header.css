@@ -25,7 +25,4 @@ header {
   .logo_container {
       justify-content: center; 
   }
-  .logo img {
-      margin-bottom: 20px;
-  }
 }
