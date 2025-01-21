@@ -71,6 +71,15 @@ h1 {
   object-fit: cover;
 }
 
+.carousel-small .control-next, 
+.carousel-small .control-prev { 
+  transform: translateY(15%);
+  border-radius: 10px;
+}
+
+
+
+
 
 
 
