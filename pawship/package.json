@@ -2,6 +2,7 @@
   "name": "pawship",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sandbox.bulme.at/~tobias.prasser",
   "dependencies": {
     "cra-template": "1.2.0",
     "herotofu-react": "^1.0.6",

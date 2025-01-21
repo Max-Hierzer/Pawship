@@ -5,11 +5,11 @@ function Navigation() {
   return (
     <nav>
       <ul>
-        <li><a href="/">Startseite</a></li>
-        <li><a href="/tiere">Tiere</a></li>
-        <li><a href="/spenden">Spenden</a></li>
-        <li><a href="/about">Über uns</a></li>
-        <li><a href="/contact">Kontakt</a></li>
+        <li><a href="/~tobias.prasser/#/">Startseite</a></li>
+        <li><a href="/~tobias.prasser/#/tiere">Tiere</a></li>
+        <li><a href="/~tobias.prasser/#/spenden">Spenden</a></li>
+        <li><a href="/~tobias.prasser/#/about">Über uns</a></li>
+        <li><a href="/~tobias.prasser/#/contact">Kontakt</a></li>
       </ul>
     </nav>
   );

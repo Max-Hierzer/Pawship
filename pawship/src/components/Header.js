@@ -7,7 +7,7 @@ function Header() {
     return (
         <header>
             <div className='logo_container'>
-                <a href="/" className="logo">
+                <a href="/~tobias.prasser/#/" className="logo">
                     <img src={logo} alt="Tierheim Logo" />
                 </a>
             </div>
