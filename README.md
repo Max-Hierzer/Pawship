@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Pawship - Find Your Pawfect Partner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Pawship Logo](images/logo.png)
 
-## Available Scripts
+Willkommen bei **Pawship** – der besten Plattform, um dein ideales Haustier zu finden! Wir verbinden Tierfreunde mit ihren perfekten tierischen Begleitern. Bei uns findest du nicht nur einen neuen Freund, sondern auch einen Partner fürs Leben. Unser Ziel ist es, Tieren ein Zuhause zu geben und Menschen mit ihren treuen Begleitern zusammenzubringen.
 
-In the project directory, you can run:
+## Funktionen
 
-### `npm start`
+- **Einfacher Zugang** zu einer Vielzahl von Tieren, die ein neues Zuhause suchen
+- **Detaillierte Profile** jedes Tieres mit Bildern, Beschreibung und Bedürfnissen
+- **Suchfilter** nach Größe, Alter, Rasse, Persönlichkeit und mehr
+- **Direktnachrichten**: Kontaktiere Tierheim-Mitarbeiter und erhalte mehr Informationen zu den Tieren
+- **Sicherer Umgang**: Wir stellen sicher, dass alle Tiere in sichere Hände kommen
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Wie es funktioniert
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Erstelle ein Konto**: Registriere dich als Tierheim oder potenzieller Tierbesitzer.
+2. **Durchstöbere Tiere**: Suche nach Tieren, die zu dir passen.
+3. **Kontaktiere das Tierheim**: Wenn du dein "Pawfect Partner" gefunden hast, kontaktiere das Tierheim für weitere Details und eine mögliche Adoption.
+4. **Erlebe die Freude**: Nimm dein neues Familienmitglied zu dir nach Hause!
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Projekt für MEDT
 
-### `npm run build`
+**Namensidee:** Pawship
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Logo:** Vielleicht ähnlich wie Parship
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Product:** Tiervermittlung
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Farbschema:** Vielleicht Grün/Blau(Hellblau)
 
-### `npm run eject`
+## Rollen
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**ScrumMaster:** Nevena
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**ProductOwner:** Philipp
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Developer:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Gernot
+- Tobias
+- Alex
+- Johanna
+- Max
 
-## Learn More
+## Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## For React:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Step 1: Clone/Pull Repository
 
-### Code Splitting
+**git clone Repository link**\
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Step 2: Move into the Pawship/pawship directory
 
-### Analyzing the Bundle Size
+### Step 3: NPM Install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Step 4: npm start
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Step 5: Have fun
