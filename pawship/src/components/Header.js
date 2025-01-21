@@ -6,10 +6,12 @@ import logo from './logo.jpg';
 function Header() {
     return (
         <header>
-            <div className="container">
+            <div className='logo_container'>
                 <a href="/" className="logo">
                     <img src={logo} alt="Tierheim Logo" />
                 </a>
+            </div>
+            <div className="container">   
                 <Navigation />
             </div>
         </header>
